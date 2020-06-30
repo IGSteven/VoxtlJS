@@ -1,7 +1,8 @@
 {
   "name": "voxtljs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "NodeJS client for Voxtl.com",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
