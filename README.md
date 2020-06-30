@@ -1,5 +1,6 @@
 <h1>VoxtlJS</h1>
 <hr>
+
 Installation
 ```
 npm i -s https://github.com/IGSteven/VoxtlJS/
