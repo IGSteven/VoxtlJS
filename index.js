@@ -62,10 +62,10 @@ class VoxtlJS extends EventEmitter {
         if (Bool == true) {
             console.log('VoxtlJS: Debugger now enabled!');
             var debugListeners = [
-                this.io.on('connect', function () { console.log('VoxtlJS: Connected to Voxtl chat server!') }),
-                this.io.on('event', function (data) { console.log('VoxtlJS: '.data) }),
-                this.io.on('chatMessage', function (data) { console.log('VoxtlJS: '.data) }),
-                this.io.on('disconnect', function () { console.log('VoxtlJS: Disconnected from Voxtl chat server!') })
+                this.io.on('connect', data => { console.log('VoxtlJS: Connected to Voxtl chat server!') }),
+                this.io.on('event', data => { console.log('VoxtlJS: '.data) }),
+                this.io.on('chatMessage', data => { console.log('VoxtlJS: '.data) }),
+                this.io.on('disconnect', data => { console.log('VoxtlJS: Disconnected from Voxtl chat server!') })
             ]
         }
         else if (Bool == false) {
