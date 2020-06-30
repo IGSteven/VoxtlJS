@@ -4,6 +4,7 @@ Installation
 ```
 npm i -s https://github.com/IGSteven/VoxtlJS/
 ```
+
 <hr>
 
 import module and create client for channel
