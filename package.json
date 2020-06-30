@@ -2,7 +2,9 @@
   "name": "voxtljs",
   "version": "1.0.2",
   "description": "NodeJS client for Voxtl.com",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/IGSteven/VoxtlJS/issues"
   },
-  "homepage": "https://github.com/IGSteven/VoxtlJS#readme"
+  "homepage": "https://github.com/IGSteven/VoxtlJS#readme",
+  "dependencies": {
+    "events": "^3.1.0",
+    "get-json": "^1.0.1",
+    "socket.io-client": "^2.3.0"
+  }
 }
