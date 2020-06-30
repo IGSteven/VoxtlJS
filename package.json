@@ -1,0 +1,22 @@
+{
+  "name": "voxtljs",
+  "version": "1.0.0",
+  "description": "NodeJS client for Voxtl.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGSteven/VoxtlJS.git"
+  },
+  "keywords": [
+    "Voxtl"
+  ],
+  "author": "Steven Smith (IGSteven)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IGSteven/VoxtlJS/issues"
+  },
+  "homepage": "https://github.com/IGSteven/VoxtlJS#readme"
+}

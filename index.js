@@ -14,7 +14,7 @@ class VoxtlJS extends EventEmitter {
         this.io = new socket('https://chat.voxtl.com'); // Make a new Socket when New is run on VoxtlJS
         this.token = undefined;
         this.bot = {
-            username: 'SteveBot',
+            username: 'Steve',
             token: this.token
         }
 
@@ -79,7 +79,8 @@ class VoxtlJS extends EventEmitter {
     }
 
     // Login with Token
-    login = function (token) {
+    login = function (username, token) {
+        this.bot.username = username;
         this.token = token;
 
         //if (!token) return console.log("VoxtlJS: No Token was provided.")
@@ -89,8 +90,8 @@ class VoxtlJS extends EventEmitter {
                 'time': Math.floor(Date.now() / 1000),
                 'token': this.token,
                 'data': {
-                    'username': 'Steve',
-                    'channel': 'Steve'
+                    'username': this.bot.username,
+                    'channel': this.channel.name
                 }
             })
 
@@ -109,7 +110,7 @@ class VoxtlJS extends EventEmitter {
             'time': Math.floor(Date.now() / 1000),
             'token': this.token,
             'data': {
-                'username': 'Steve',
+                'username': this.bot.username,
                 'message': msg
             }
         }
