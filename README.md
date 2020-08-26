@@ -1,45 +1,26 @@
-<h1>VoxtlJS</h1>
-<hr>
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-Installation
-```
-npm i -s https://github.com/IGSteven/VoxtlJS/
-```
 
-<hr>
+<!-- GETTING STARTED -->
+## Getting Started
 
-import module and create client for channel
-```
-const VoxtlJS = require('VoxtlJS');
-const client = new VoxtlJS('Steve');
-```
-
-Start bot and Wait for messages
-```
-client.on('ready', data => {
-    // Once connections Established.
-}
-
-// Listen for Messages
-client.on('chatMessage', msg => {
-    console.log(msg);
-
-    if (msg.data.message.startsWith("!ping"){
-        client.sendMessage(`Pong\!`)
-   }
-
-})
+### Installation
+```sh
+    npm i -s https://github.com/IGSteven/VoxtlJS/
 ```
 
-Send Messages
-```
-    client.sendMessage('YOUR_MESSAGE');
-```
+### Usage
 
-To send messages you will have to login to the chat. (optional if you just want to creep)
-```
-client.login('BOT_USERNAME', 'YOUR_TOKEN_HERE');
-```
 
-<hr>
-<h3>More Documentation will be coming soon once js.org approve my site<h3>
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Voxtl Nebula](https://github.com/Voxtl/Nebula)
